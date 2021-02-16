@@ -49,10 +49,9 @@ public class StorageServiceImpl implements IStorageService{
                 Files.delete(Paths.get(fileToBucket.getAbsolutePath()));
             } catch (IOException e) {
                 log.error(e);
-            }
-            return "Create file in bucket";
+            }            
         }
-
+		return "Create file in bucket";
     }
 
     @Override
