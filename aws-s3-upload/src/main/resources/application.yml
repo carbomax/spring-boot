@@ -1,0 +1,19 @@
+cloud:
+  aws:
+    credentials:
+      access-key: XXXXXXXXX
+      secret-key: XXXXXXXXX
+    region:
+      static: us-east-2
+    stack:
+      auto: false
+
+application:
+  bucket:
+    name: pepeganga-upload-images
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-request-size: 10MB
+      max-file-size: 10MB
